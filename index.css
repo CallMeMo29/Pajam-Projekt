@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 20px 0 20px;
-  border: 1px solid grey;
+  border: 1px solid #79778D;
   color: #FFFFFF;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 #team > .roster > .member > span {  
-  font-size: 0.89em;
+  font-size: 0.7em;
   color: #FAFAFA;
 }
 
