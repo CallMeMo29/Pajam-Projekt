@@ -49,7 +49,7 @@ nav {
 }
 
 #header_content_container p {
-  padding: 30px;
+  padding: 15px;
 }
 
 .logo_container {
@@ -69,7 +69,20 @@ li {
   list-style: none;
 }
 
+article h1 {
+  padding: 15px;
+  font-family: Playfair Display;
+}
+
+hr {
+  color: aqua;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 button {
+  margin-top: 20px;
   padding: 10px 15px;
   color: aqua;
   border: 2px solid;
