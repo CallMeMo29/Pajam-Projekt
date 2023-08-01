@@ -85,28 +85,47 @@ body {
   height: 100%;
 }
 /* Sven */
+footer {
+  background-image: url("bgk-footer.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  padding: 30px 0 30px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer > section {
+  display: grid;
+  grid-template-rows: 160px 50px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  margin: 0 230px;
+}
+
 #team {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('bgk-team.png');
+  background-image: url("bgk-team.png");
   background-position: center;
   background-size: cover;
   min-height: 400px;
   padding: 30px 0 30px 0;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #team > .heading {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-#team > .heading > p, #team > p {  
+#team > .heading > p,
+#team > p {
   text-transform: none;
 }
 
@@ -121,23 +140,23 @@ body {
   align-items: center;
   margin: 0 20px 0 20px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-#team > .roster > .member > .image{
+#team > .roster > .member > .image {
   width: 220px;
   height: 230px;
-  padding:0px;
+  padding: 0px;
   background-color: white;
 }
 
 #team > .roster > .member > figcaption {
   width: calc(100% - 1px);
-  border: 1px solid #79778D;
+  border: 1px solid #79778d;
   text-align: center;
 }
 
-#team > .roster > .member > figcaption > span {  
+#team > .roster > .member > figcaption > span {
   font-size: 0.7em;
   color: #cccccc;
 }
