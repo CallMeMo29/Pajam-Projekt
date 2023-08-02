@@ -95,23 +95,21 @@ button:hover {
 }
 
 /* Anh */
-
 #story_video {
-  position: relative;
-}
-#story_video img {
+  background-image: url("bgk-middle.png");
+  background-position: center;
+  background-size: cover;
+  height: 550px;
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 #central_btr {
-  position: absolute;
-  top: 0;
-  padding-left: 45%;
-  padding-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #central_btr img {
   width: 90px;
@@ -123,18 +121,23 @@ button:hover {
   font-weight: bold;
   padding-top: 1rem;
 }
+/*EXPERTISE*/
 .line-1 {
   height: 2px;
-  width: 90px;
+  width: 80px;
   background: #c3cbd6;
 }
 
-/*EXPERTISE*/
 #expertise {
   width: 100%;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #expertise_title {
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -154,6 +157,7 @@ button:hover {
 }
 
 .expertise_element {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
