@@ -50,13 +50,22 @@ nav {
 
 #header_content_container p {
   padding: 15px;
+  font-weight: 200;
 }
 
-.logo_container {
+#logo_container {
   width: 30%;
+  display: flex;
 }
 
-.navigation_container {
+#logo_container p {
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 10px;
+  color: aqua;
+}
+
+#navigation_container {
   width: 70%;
 }
 
@@ -92,6 +101,44 @@ button {
 
 button:hover {
   color: yellow;
+}
+
+#story_text {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#story_outer_container {
+  width: 940px;
+  display: flex;
+  justify-content: center;
+}
+
+#story_container_left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#story_container_right {
+  background-color: rgb(0, 128, 255);
+  width: 60%;
+  align-items: center;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#story_container_right h2 {
+  color: white;
+  padding-bottom: 15px;
+  font-family: Playfair Display;
+}
+
+#story_container_right p {
+  font-weight: 200;
 }
 
 /* Anh */
