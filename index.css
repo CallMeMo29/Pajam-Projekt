@@ -306,6 +306,7 @@ footer > .columns-3 {
   margin-left: 10px;
   background: -webkit-linear-gradient(#3b9dad, #234b65);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -398,6 +399,15 @@ footer > #bottom {
   margin-top: 30px;
 }
 
+#middle ul {
+  display: block;
+}
+
+#bottom a {
+  color: white;
+  text-decoration: none;
+}
+
 #team {
   display: flex;
   flex-direction: column;
@@ -449,6 +459,7 @@ footer > #bottom {
   width: calc(100% - 1px);
   border: 1px solid #79778d;
   text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 #team > .roster > .member > figcaption > span {
