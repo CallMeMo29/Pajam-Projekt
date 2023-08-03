@@ -155,23 +155,21 @@ header button:hover,
 }
 
 /* Anh */
-
 #story_video {
-  position: relative;
-}
-#story_video img {
+  background-image: url("bgk-middle.png");
+  background-position: center;
+  background-size: cover;
+  height: 550px;
   width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 #central_btr {
-  position: absolute;
-  top: 0;
-  padding-left: 45%;
-  padding-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #central_btr img {
   width: 90px;
@@ -183,18 +181,23 @@ header button:hover,
   font-weight: bold;
   padding-top: 1rem;
 }
+/*EXPERTISE*/
 .line-1 {
   height: 2px;
-  width: 90px;
+  width: 80px;
   background: #c3cbd6;
 }
 
-/*EXPERTISE*/
 #expertise {
   width: 100%;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #expertise_title {
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -214,6 +217,7 @@ header button:hover,
 }
 
 .expertise_element {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,16 +268,126 @@ footer {
   background-size: cover;
   min-height: 200px;
   padding: 30px 0 30px 0;
-  text-transform: uppercase;
   color: #ffffff;
+  display: block;
+  font-size: 0.8em;
+  box-sizing: inherit;
+}
+
+footer > .columns-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columns-3 > #left,
+#middle,
+#right {
+  margin: 0;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.columns-3 > #left > #tajam {
+  display: flex;
+  align-items: flex-start;
+}
+
+.columns-3 > #left > #tajam > h2 {
+  margin-left: 10px;
+  background: -webkit-linear-gradient(#3b9dad, #234b65);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.columns-3 > #middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-3 > #middle > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 15pt;
+}
+
+.columns-3 > #middle > ul {
+  list-style-type: none;
+}
+
+.columns-3 > #middle > ul > li {
+  margin-left: 10px;
+}
+
+#address::before {
+  content: url("png/big104.png");
+  position: relative;
+  top: 22px;
+  right: 22px;
+  display: block;
+}
+
+#phone::before {
+  content: url("png/phone351.png");
+  position: relative;
+  top: 22px;
+  right: 22px;
+  display: block;
+}
+
+.columns-3 > #middle,
+#right {
+  margin-top: 10px;
+}
+
+.columns-3 > #right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columns-3 > #right #form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 25px 0;
+}
+
+.columns-3 > #right > #form > input[type="text"] {
+  background: transparent;
+  min-width: 200px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.columns-3 > #right > #form > input[type="text"]::placeholder {
   text-align: center;
 }
 
-footer > section {
-  display: grid;
-  grid-template-rows: 160px 50px;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  margin: 0 230px;
+.columns-3 > #right > #links > a {
+  margin: 3px;
+}
+
+.columns-3 > #right button {
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  width: 60px;
+  height: 32px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer > #bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 #team {
