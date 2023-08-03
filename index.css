@@ -238,6 +238,7 @@ footer > .columns-3 {
   margin-left: 10px;
   background: -webkit-linear-gradient(#3b9dad, #234b65);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
