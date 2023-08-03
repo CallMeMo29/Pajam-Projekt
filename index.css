@@ -23,7 +23,9 @@ header {
   height: 670px;
 }
 
-#header_container h1 {
+#header_container li,
+#header_container h1,
+#header_container p {
   color: white;
 }
 
@@ -33,15 +35,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#navigation_container a {
-  text-decoration: none;
-  color: white;
-}
-
-#navigation_container a:hover {
-  color: aqua;
 }
 
 #header_content_container {
@@ -56,7 +49,6 @@ nav {
 }
 
 #header_content_container p {
-  color: white;
   padding: 15px;
   font-weight: 200;
 }
@@ -192,13 +184,13 @@ header button:hover,
 /*EXPERTISE*/
 .line-1 {
   height: 2px;
-  width: 65px;
+  width: 80px;
   background: #c3cbd6;
 }
 
 #expertise {
   width: 100%;
-  padding: 20px 0 80px 0;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,11 +214,6 @@ header button:hover,
 #expertise_title p {
   text-align: center;
   padding-bottom: 1rem;
-  color: grey;
-}
-
-.text_normal {
-  color: grey;
 }
 
 .expertise_element {
@@ -238,19 +225,22 @@ header button:hover,
   padding-bottom: 1rem;
   border-bottom: 1px solid #c3cbd6;
   border-left: 1px solid #c3cbd6;
+  &:nth-child(1) {
+    border-left: none;
+  }
+  &:nth-child(4) {
+    border-left: none;
+  }
+  &:nth-child(4) {
+    border-bottom: none;
+  }
+  &:nth-child(5) {
+    border-bottom: none;
+  }
+  &:nth-child(6) {
+    border-bottom: none;
+  }
 }
-
-#border_left1,
-#border_left4 {
-  border-left: none;
-}
-
-#border_left4,
-#border_bottom5,
-#border_bottom6 {
-  border-bottom: none;
-}
-
 .icon,
 .text_bold,
 .text_normal {
@@ -481,7 +471,7 @@ section #form {
 }
 
 form {
-  padding: 5px;
+  padding: ;
 }
 
 .small {
@@ -498,7 +488,6 @@ form {
 .form-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 15px;
 }
 
 #Baum {
@@ -508,18 +497,32 @@ form {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: 32px;
+  row-gap: 2px;
+}
+
+.formular {
+  padding: 50px;
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .grid {
+  display: flex;
   max-height: fit-content;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cap {
   display: flex;
   max-height: fit-content;
   flex-direction: column;
+  width: 50%;
 }
 
 fieldset {
