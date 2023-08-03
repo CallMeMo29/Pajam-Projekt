@@ -23,9 +23,7 @@ header {
   height: 670px;
 }
 
-#header_container li,
-#header_container h1,
-#header_container p {
+#header_container h1 {
   color: white;
 }
 
@@ -35,6 +33,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#navigation_container a {
+  text-decoration: none;
+  color: white;
+}
+
+#navigation_container a:hover {
+  color: aqua;
 }
 
 #header_content_container {
@@ -49,6 +56,7 @@ nav {
 }
 
 #header_content_container p {
+  color: white;
   padding: 15px;
   font-weight: 200;
 }
