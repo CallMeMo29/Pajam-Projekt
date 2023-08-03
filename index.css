@@ -391,6 +391,15 @@ footer > #bottom {
   margin-top: 30px;
 }
 
+#middle ul {
+  display: block;
+}
+
+#bottom a {
+  color: white;
+  text-decoration: none;
+}
+
 #team {
   display: flex;
   flex-direction: column;
@@ -442,6 +451,7 @@ footer > #bottom {
   width: calc(100% - 1px);
   border: 1px solid #79778d;
   text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 #team > .roster > .member > figcaption > span {
